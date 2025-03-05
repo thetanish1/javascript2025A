@@ -69,3 +69,60 @@ let w3 = lastName.endsWith('i')
 let w4 = lastName.endsWith('ni')
 console.log(w3)
 console.log(w4)
+
+
+let fn = "chinmay"
+
+// 0  1  2  3  4  5  6
+// c  h  i  n  m  a   y
+
+e = fn.charAt(2)
+console.log(e)
+
+g = fn.charCodeAt(8)
+console.log(g)
+
+f = fn.codePointAt(8)
+console.log(f)
+
+// reverse
+
+firstC = "hello"
+rev = ""
+
+// for(let i = 0 ; i < firstC.length ; i++){
+//     //console.log(i)
+//     //console.log(firstC[i])
+//     rev = firstC[i] + rev
+//     //       h      +  ""  ====> h
+//     //       e      +  h   ====> eh
+//     //       l      +  eh  ====> leh
+//     //       l      + leh  =====> lleh
+//     //       o      + lleh ======> olleh
+    
+// }
+// console.log(rev)
+
+// for(let i = firstC.length -1 ; i >= 0 ; i--){
+//     rev = rev + firstC[i]
+// }
+// console.log(rev)
+
+
+let city6 = "chandrapur"
+// 0   1   2   3  4   5   6   7   8  9
+// c   h   a   n  d   r   a   p   u   r
+//-10  -9  -8  -7 -6  -5  -4  -3  -2  -1        
+
+console.log(city6.slice(-5))
+console.log(city6.slice(1,5))
+console.log(city6.slice(1,-1))
+console.log(city6.slice(-8,8))
+console.log(city6.slice(-1,6))
+
+info = "I am learning js and js is great"
+e = info.replace("js","python")
+console.log(e)
+
+e = info.replaceAll("js","python")
+console.log(e)
