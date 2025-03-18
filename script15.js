@@ -1,72 +1,80 @@
-// program 1
 
-let amol = {
-    firstName:"amol",
-    lastName:"rao",
-    age:45,
-    rollNo:45
-
+let info = {
+    firstName:'chinmay',
+    lastName:'deshpande',
+    age:12,
+    rollNo:34
 }
-let chinmay = {
-    firstName:"chinmay",
-    lastName:"deshpande",
-    age:23,
-    rollNo:45
-    
-}
+console.log(info)
+// Map ---> 
+// key:value
+// Map key can be any datatype
 
-// 10 objects ======> 50 lines of code
-// user defined data type
-// class 
+let mapA = new Map([
+    [1,"admin"],
+    [2,"customer"],
+    [3,"manager"],
+    [4,"support"],
+    [true,"candrive"],
+    [["python","js"],"skills"],
+    [{first:undefined,lastName:undefined},"chinmay deshpande"]
 
-class Person {
+])
+console.log(mapA)
 
-    firstName= undefined   
-    lastName = undefined
-    age = undefined
-    rollNo = undefined
-}
+// program 2
+// two ways to define a map
 
-let amol2 = new Person()
-console.log(amol2)
+let mapB = new Map([
+    [1,"admin"],
+    [2,"support"],
+    [3,"customer"]
+])
+console.log(mapB)
 
-let chinmay2 = new Person()
-console.log(chinmay2)
-
-chinmay2.firstName = "chinmay2"
-chinmay2['lastName'] = "deshpande2"
-chinmay2.age = 45
-chinmay2.rollNo = 123
-console.log(chinmay2)
+let mapC = new Map()
+console.log(mapC)
+mapC.set(1,"admin")
+mapC.set(2,"support")
+mapC.set(1,"customer")
+console.log(mapC)
 
 // program 3
+let mapD = new Map([
+    [1,"admin"],
+    [2,"support"],
+    [3,"customer"]
+])
 
-class PersonB {
-    constructor(fn,ln,ag,rollNo){
-        this.firstName  = fn
-        this.lastName = ln 
-        this.age = ag 
-        this.rollNo = rollNo
-    }
+console.log(mapB.size)
+// particular key exist
+let q1 = mapD.has(1)
+let q2 = mapD.has(6)
+console.log(q1)
+console.log(q2)
 
+// mapD.clear()
+// console.log(mapD)
+let a = mapD.get(1)
+console.log(a)
+
+
+mapD.forEach(function(val,key){
+    console.log(val,key)
+})
+
+for(let x of mapD.keys()){
+    console.log(x)
 }
-let sarika = new PersonB("sarika","pansare",26,55)
-let mayuri = new PersonB("mayuri","rao",36,53)
 
-console.log(sarika)
-console.log(mayuri)
+for(let x of mapD.values()){
+    console.log(x)
+}
 
-sarika.language = "marathi"
-console.log(sarika)
+for(let [x,y] of mapD.entries()){
+    console.log(x,y)
+}
 
-let sarikaB = sarika
-sarikaB['firstName'] = "sarika p"
-console.log(sarika)
-console.log(sarikaB)
-
-let names = ["amol","sumit","ram"]
-let namesN  = names
-
-names[0] = "rahul"
-console.log(names)
-console.log(namesN)
+mapD.delete(2)
+console.log(mapD)
+//String , array , object , userDefined (new),Map
