@@ -103,10 +103,22 @@ console.log(w3)
 
 // join()
 
+let info = ["chinmay","deshpande",7709192441]
+let q33 = info.join('@')
+console.log(q33)
+
 
 // fill()
-
+//        0  1  2  3  4
+let g = [11,22,33,44,55]
+let r1 = g.fill('@',1,4)
+console.log(r1)
 
 
 // at()
-
+//              0          1      2
+let names2 = ["chinmay","amit","shirsh"]
+let r2 = names2.indexOf("chinmay")
+console.log(r2)
+let r3 = names2.at(1)
+console.log(r3)
