@@ -20,7 +20,7 @@ let city = ["pune","mumbai","bangalore","kolkata","chennai"]
 // city.shift()
 //city.splice(startPfirstIndex,numberOfElements)
 //city.splice(startPfirstIndex,numberOfElements,replacement)
-city.splice(3,1,"nagpur")
+city.splice(3,2,"nagpur")
 console.log(city)
 
 //fill

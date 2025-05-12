@@ -48,7 +48,6 @@ for(let  i = numbersB.length-1 ; i >= 0 ; i--){
 }
 
 // program 6
-
 let numbersC = [222,333,444]
 let i1 = 1
 while(i1 < numbersC.length){

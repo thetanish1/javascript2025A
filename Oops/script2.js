@@ -161,4 +161,9 @@ console.log(q1.rollN)
 console.log(q1.ag)
 
 
+// object literal 
+// class
+// class with constructor 
+// setter methods
+// set and get keyword
 

@@ -51,7 +51,6 @@ console.log(cities)
 
 
 // program 5
-
 let a = [11,22,33]
 let b = [44,55,66]
 let q8 = a.concat(b)

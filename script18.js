@@ -95,4 +95,6 @@ function displayCity(c1,c2,c3){
 }
 displayCity(...names)
 
+//a,b,c ==> [a,b,c]
+//[a,b,c]= a,b,c
 

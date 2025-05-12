@@ -13,12 +13,8 @@ addB.addEventListener('click',function(){
     inputText.value = ""
 })
 
-
-
 ulList.addEventListener('click',function(event){
-
-    if(event.target.tagName == "BUTTON"){
-
+    if(event.target.tagName == "BUTTON")
         if(event.target.className == "remove"){
             let li = event.target.parentElement
             let ul = li.parentElement
@@ -35,7 +31,6 @@ ulList.addEventListener('click',function(event){
         }
         
         else if(event.target.className == "down"){
-
             let li = event.target.parentElement
             let ul = li.parentElement
             let next = li.nextElementSibling

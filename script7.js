@@ -45,3 +45,4 @@ for(let i = 0 ; i < cities .length ; i++){
     //console.log(cities[i])
     console.log("welcme "+cities[i])
 }
+// map(), filter(), reduce(), forEach(), find() ,findIndex(),some(),every()

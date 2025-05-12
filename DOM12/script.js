@@ -23,6 +23,6 @@ console.log(headOne)
 
 // program 3
 
-buttonE.addEventListener('click',function(){
-    window.location.reload()
-})
+// buttonE.addEventListener('click',function(){
+//     window.location.reload()
+// })

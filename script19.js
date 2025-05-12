@@ -88,7 +88,5 @@ console.log(obj3)
 // objects
 
 
-
-
 // Oops
 // Ajax 

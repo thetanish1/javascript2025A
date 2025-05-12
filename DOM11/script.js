@@ -37,10 +37,8 @@ oneE.classList.toggle("four")
 // retrive
 let vl = oneE.getAttribute('name')
 console.log(vl)
-
 // add
 oneE.setAttribute('data-cy',"eleOne")
 // update
 oneE.setAttribute('data-cy',"eleTwo")
-
 oneE.removeAttribute('data-cy')
