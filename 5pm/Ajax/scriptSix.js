@@ -1,23 +1,28 @@
-// promise one by one 
+// promise one by one
 // dependency ----> one request then another request
-// multiple promises ----> execution ---> parallel 
+// multiple promises ----> execution ---> parallel
 
+let p1 = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    resolve("hello....");
+  }, 3000);
+});
+let p2 = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    resolve("hello....2");
+  }, 2000);
+});
+let p3 = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    reject("hello....3");
+  }, 1000);
+});
 
-let p1  = new Promise(function(resolve,reject){
-    setTimeout(function(){
-        resolve("hello....")
-    },3000)
-})
-let p2  = new Promise(function(resolve,reject){
-    setTimeout(function(){
-        resolve("hello....2")
-    },2000)
-})
-let p3 = new Promise(function(resolve,reject){
-    setTimeout(function(){
-        reject("hello....3")
-    },1000)
-})
+let p4 = new Promise (function (resolve,reject){
+    setTimeout(function() {
+        reject("Hello4");
+    },3000);
+});
 
 // promise.all()
 // promise.race()
@@ -35,8 +40,6 @@ let p3 = new Promise(function(resolve,reject){
 //     console.log(err)
 // })
 
-
-
 // async function PAll(){
 //     try{
 //         let result = await Promise.all([p1,p1,p3])
@@ -45,10 +48,9 @@ let p3 = new Promise(function(resolve,reject){
 //     catch(err){
 //         console.log(err)
 //     }
-    
+
 // }
 // PAll()
-
 
 // Promise.race()
 
@@ -60,7 +62,6 @@ let p3 = new Promise(function(resolve,reject){
 //     console.log("First to reject",err)
 // })
 
-
 // async function Prace(){
 //     try {
 //        let result =  await Promise.race([p1,p2,p3])
@@ -71,7 +72,6 @@ let p3 = new Promise(function(resolve,reject){
 //     }
 // }
 //Prace()
-
 
 // All settled
 
@@ -88,22 +88,19 @@ let p3 = new Promise(function(resolve,reject){
 
 // Promise.any()
 
+Promise.any([p1, p2, p3,p4])
+  .then(function (result) {
+    console.log(result);
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
 
-Promise.any([p1,p2,p3])
-.then(function(result){
-    console.log(result)
-})
-.catch(function(err){
-    console.log(err)
-})
-
-async function Pany(){
-    try {
-    let result = await Promise.any([p1,p2,p3])
-    console.log(result)
-    }
-    catch(err){
-        console.log(err)
-    }
-
+async function Pany() {
+  try {
+    let result = await Promise.any([p1, p2, p3,p4]);
+    console.log(result);
+  } catch (err) {
+    console.log(err);
+  }
 }

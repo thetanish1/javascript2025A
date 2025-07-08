@@ -30,42 +30,46 @@
 // Program 3
 
 // userCreate  -----------> userId ----------> userInfo
-function userInfo() {
-    setTimeout(function () {
-        console.log("user Created")
-    }, 3000)
+// function userInfo() {
+//     setTimeout(function () {
+//         console.log("user Created")
+//     }, 3000)
 
-    setTimeout(function () {
-        console.log("user Id")
-    }, 2000)
+//     setTimeout(function () {
+//         console.log("user Id")
+//     }, 2000)
 
-    setTimeout(function () {
-        console.log("user Info")
-    }, 1000)
+//     setTimeout(function () {
+//         console.log("user Info")
+//     }, 1000)
 
-
-}
-//userInfo()
+// }
+// userInfo()
 
 // Program 4
 // Call back hell 
 // async code ---------> sync 
 
 
-function userInfo() {
-    setTimeout(function () {
-        console.log("user Created")
-        setTimeout(function () {
-            console.log("user Id")
-            setTimeout(function () {
-                console.log("user Info")
-            }, 1000)
+// function userInfo() {
+//     setTimeout(function () {
+//         console.log("user Created")
+//         setTimeout(function () {
+//             console.log("user Id")
+//             setTimeout(function () {
+//                 console.log("user Info")
+//             }, 1000)
 
-        }, 2000)
-    }, 3000)
+//         }, 2000)
+//     }, 3000)
 
-}
-userInfo()
+// }
+// userInfo()
 
-// Promises 
+// Promises
 //  Async  code  ------ Sync  
+
+function greet(name) {
+  return "Hello, " + name;
+}
+console.log(greet("Tanish")); // Hello, Tanish
