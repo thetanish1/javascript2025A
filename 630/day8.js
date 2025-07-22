@@ -139,12 +139,50 @@ console.log(q88)
 // map() , filter() , reduce(), forEach(), find(), findIndex() , some()
 // every()
 
+//                   0                    1                2
+//                0     1          0         1         0           1
+let states = [["pune","mumbai"],["indore","bhopal"],['udaipur',"jaipur"]]
+let r1 = states.flat()
+console.log(r1)
+
+let cities2 = ["pune","mumbai","banglore"]
+let cities3  = ["chennai","rajasthan","jaipur"]
+let q11 = cities2.concat(cities3)
+console.log(q11)
+
+//               0       1        2           3         4       5
+let cities4 = ["pune","mumbai","banglore","kolkata","chennai","delhi"]
+//              -6      -5         -4        -3       -2         -1
+//cities4.slice(startIndex,endIndex(not included))
+console.log(cities4.slice(2))
+console.log(cities4.slice(-3))
+console.log(cities4.slice(1,5))
+console.log(cities4.slice(-5,-1))
+console.log(cities4.slice(-5,4))
+console.log(cities4.slice(1,-1))
+console.log(cities4.slice(-1,-4))
 
 
+//           0        1       2           3        4        5
+cities4 = ["pune","mumbai","banglore","kolkata","chennai","delhi"]
 
+// cities4.pop()
+// cities4.shift()
+// cities4.splice(startIndex,numberOfElements)
+// cities4.splice(startIndex,numberOfElements,rep1,rep2)
 
+// cities4.splice(1,2)
+// console.log(cities4)
+//cities4.splice(1,1)
+cities4.splice(2,2,"nagpur","goa")
+console.log(cities4)
 
+let info = ["chinmay","deshpande",12]
+let y = info.join('-')
+console.log(y)
 
-
-
-
+//            0  1  2  3  4  5  6  7  8
+let marksA = [11,22,33,44,55,66,77,88,99]
+//let r4 = marksA.fill('@',1)
+let r4 = marksA.fill('@',1,6)
+console.log(r4)
