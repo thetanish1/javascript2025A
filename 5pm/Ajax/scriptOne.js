@@ -69,3 +69,5 @@ userInfo()
 
 // Promises 
 //  Async  code  ------ Sync  
+
+// Promise allSettled

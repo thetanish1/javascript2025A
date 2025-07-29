@@ -16,7 +16,6 @@ function getListUsers(page) {
         })
 }
 
-
 function getid(id) {
     return fetch(`https://reqres.in/api/users/${id}`, {
         method: 'GET',
@@ -37,8 +36,6 @@ function getid(id) {
 function renderHtml(obj){
     document.writeln(`<h1>${obj.id}${obj.email}</h1>`)
 }
-
-
 
 async function getUserInfo(pageNumber){
         let response = await getListUsers(pageNumber)

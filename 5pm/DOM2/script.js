@@ -1,7 +1,6 @@
 
 //<h2 id = "one" class ="two" name="nm">Head</h2>
 // CSS - selector
-
 // id
 let byId = document.querySelector('#one')
 console.log(byId)
