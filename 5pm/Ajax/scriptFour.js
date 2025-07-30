@@ -62,6 +62,7 @@
 //     document.writeln(`<h1>${el.id}${el.email}</h1>`)
 //     document.writeln(`<img src= ${el.avatar}>`)
 // })
+
 let clickButton = document.querySelector('#user')
 
 function userInfo(page) {
