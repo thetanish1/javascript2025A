@@ -1,0 +1,19 @@
+
+p {
+    color:yellow
+}
+
+.fr {
+    color:red
+}
+#one {
+    color: purple;
+}
+
+.gr {
+    color: green;
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}

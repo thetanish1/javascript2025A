@@ -93,11 +93,6 @@ switch(biggest){
 
 
 
-
-
-
-
-
 // if(x1 > x2 && x1 > x3){
 //     console.log("x1 is greater")
 // }

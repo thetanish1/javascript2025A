@@ -27,7 +27,6 @@
 let byHeading = document.querySelector('#heading')
 // retrive
 console.log(byHeading.className)
-
 // to update the attribute
 byHeading.classList.add("secondClass")
 // remove the attribute
@@ -38,7 +37,6 @@ byHeading.classList.toggle('headingClass')
 byHeading.classList.toggle('headingClass')
 
 // other arrtibute
-
 let val = byHeading.getAttribute('id')
 console.log(val)
 // update 

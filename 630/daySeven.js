@@ -62,3 +62,6 @@ console.log(a3)
 let info = ["chinmay","deshpande",7709192441]
 let r4 = info.join('-')
 console.log(r4)
+
+// map(), filter(), reduce(), forEach()
+// every(),some(),find(),findIndex()

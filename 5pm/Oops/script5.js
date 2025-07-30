@@ -77,12 +77,24 @@ class WorldBank {
 
 
 class SBI extends  WorldBank {
+    // same method name , different class and has a relationship
+    save(){
+        console.log("SBI save method is called")
+    }
+
+    loan(){
+        console.log("SBI loan method is called")
+    }
+
     
 }
 
 let sbiA = new SBI()
 sbiA.loan()
 sbiA.save()
+
+// 8:30 am 
+// 8:00 am
 
 
 

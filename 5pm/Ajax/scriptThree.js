@@ -188,17 +188,17 @@ function Info (){
 
 // asyn await 
 
-async function getUserInfo(){
-    let r1 = await userCreate()
-    console.log(r1)
-    let r2 = await Id()
-    console.log(r2)
-    let r3 = await Info()
-    console.log(r3)
-}
-getUserInfo().then(function(){
-    console.log('End')
-})
+// async function getUserInfo(){
+//     let r1 = await userCreate()
+//     console.log(r1)
+//     let r2 = await Id()
+//     console.log(r2)
+//     let r3 = await Info()
+//     console.log(r3)
+// }
+// getUserInfo().then(function(){
+//     console.log('End')
+// })
 
 
 

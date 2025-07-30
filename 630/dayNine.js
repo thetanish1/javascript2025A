@@ -78,3 +78,9 @@ while(i2 < city3.length){
     i2 = i2  + 1
 }
 // methods of string
+
+
+
+
+
+

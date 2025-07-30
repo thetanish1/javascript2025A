@@ -68,8 +68,3 @@
 
 // Promises
 //  Async  code  ------ Sync  
-
-function greet(name) {
-  return "Hello, " + name;
-}
-console.log(greet("Tanish")); // Hello, Tanish
