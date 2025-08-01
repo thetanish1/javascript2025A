@@ -313,7 +313,18 @@
 //   }
 // );
 
-
-
-
-
+let pro2 = new Promise(function (resolve, reject) {
+  let fn = "tanish";
+  if (fn.length >= 5) {
+    resolve("True");
+  } else {
+    reject("False");
+  }
+});
+pro2
+  .then(function (a) {
+    console.log(a);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
