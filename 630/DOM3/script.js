@@ -47,4 +47,3 @@ byAttribute.addEventListener('click',function(){
     byAttribute.textContent = "i am learning"
 })
 
-
