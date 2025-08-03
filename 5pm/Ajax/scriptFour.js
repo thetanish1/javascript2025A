@@ -91,6 +91,6 @@ function userInfo(page) {
 }
 
 clickButton.addEventListener('click',function(){
-    userInfo(2)
+    userInfo(1)
 })
 
