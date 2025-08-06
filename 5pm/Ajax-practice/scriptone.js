@@ -27,46 +27,90 @@ tanish2();
   console.log("Hello javascript");
 })();
 
+(function (){
+  console.log("Hello world");
+})();
 
 //arrow function
-let a1= ()=>{
-    a=10
-    b=29
-    console.log(a+b)
-}
+let a1 = () => {
+  a = 10;
+  b = 29;
+  console.log(a + b);
+};
 a1();
 
+const a2 = function (name) {
+  return `${name}`;
+};
+console.log(a2("Tanish"));
 
-const a2=function(name){
-    return `${name}`;
-}
-console.log(a2("Tanish"))
+let a3 = function tanish(city) {
+  return `${city}`;
+};
+console.log(a3("nagpur"));
 
-
-let a3= function tanish(city){
-    return `${city}`;
-}
-console.log(a3('nagpur'))
-
-
-// named function 
-function dewase(){
-    console.log("Hello from named function")
+// named function
+function dewase() {
+  console.log("Hello from named function");
 }
 
-dewase()
+dewase();
 
-// anonoyms function 
-let s1= function (){
-  return "Hello from anonymous function"
+// anonoyms function
+let s1 = function () {
+  return "Hello from anonymous function";
+};
+console.log(s1());
+
+// storing in variable
+
+let s2 = function add(a, b) {
+  return a + b;
+};
+console.log(s2(10, 3));
+
+// callback function
+
+function namestudent(name, callback) {
+  console.log(`Hello ${name}`);
+  callback();
 }
-console.log(s1())
 
-//
+function sayBye() {
+  console.log("Bye");
+}
+namestudent("tanish", sayBye);
+
+(function (){
+  console.log("Invoking anonymous Function ")
+})();
 
 
+/////////////////////////////////////////////
+// Arrow function
+let ab = ()=>{
+  return "Hello from Arrow Function"
+}
+console.log(ab())
 
+let sun= (a,b)=>{
+  return `${a} ${b}`
+}
+console.log(sun(1,2))
 
+///////////////////////////////////////////
+// Async function 
 
+function d1(){
+  setTimeout(function (){
+    console.log("Hello from Async Code")
+  },3000)
+}
+d1()
 
-
+function d2(a,b){
+  setTimeout(()=>{
+    console.log(a+b)
+  },2000)
+}
+d2(10,2)
