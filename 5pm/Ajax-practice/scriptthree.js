@@ -169,6 +169,17 @@ async function getuserinfo(pgno) {
     renderHTML (info.data)      
 }
 getuserinfo(1)
+  .then(function(response){
+    console.log(response.data[0]['id'])
+    return response.data[0]['id']
+  })
+  .then(function(response){
+    return getID(id)
+  })
+  .then(function(response){
+    console.log(response)
+    renderHTML(response.data)
+  })
 
 // async function getUserInfo(pageNumber){
 //         let response = await getListUsers(pageNumber)
