@@ -101,21 +101,21 @@
 
 
             //  0        1         2        3
-let names=['tanish','disha','rishika','virat']
-console.log(typeof(names)) 
+// let names=['tanish','disha','rishika','virat']
+// console.log(typeof(names)) 
 
-names.push("radha")
-console.log(names)
+// names.push("radha")
+// console.log(names)
 
-let p1=names.pop()
-console.log(p1)
-console.log(names)
+// let p1=names.pop()
+// console.log(p1)
+// console.log(names)
 
-names.shift()
-console.log(names)
+// names.shift()
+// console.log(names)
 
-names.unshift("tanish","dewase")
-console.log(names)
+// names.unshift("tanish","dewase")
+// console.log(names)
 
 // let i2=names.slice(1,3)
 // console.log(i2)
@@ -131,12 +131,24 @@ console.log(names)
 // console.log(o)
 
 
+let names=['tanish','disha','rishika','vanshika']
+console.log(names.length)
 
+names.push("Poorva")  // end
+console.log(names)
 
+names.unshift("dishu") //start
+console.log(names)
 
+names.pop()  //last dlt
+console.log(names)
 
+names.shift()  // first dlt
+console.log(names)
 
+names.sort()
+console.log(names)
 
-
-
+let q=names.at('tanish')
+console.log(q)
 
