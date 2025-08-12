@@ -1,8 +1,6 @@
 // flat 
 //                   0                     1                   2         
 
-const { version } = require("react")
-
 //               0         1        0          1        0           1
 let states = [["ujjain","indore"],["mumbai","nagpur"],["udaipur","jaipit"]]
 console.log(states[0][1])
