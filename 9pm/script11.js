@@ -72,7 +72,7 @@ let q333 = arrE.find(function(el,index,arr){
 console.log(q333)
 
 let q3334 = arrE.findIndex(function(el,index,arr){
-    return el > 30
+    return el > 30  // 30 se bade kitne elements hai, ye battat hai
 })
 console.log(q3334)
 
