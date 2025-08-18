@@ -117,7 +117,7 @@ let t=birthyear.map(function(element,index,array){
 })
 console.log(t)
 
-// Map()
+// Map()  
 // marks=[54,24,67,3,33,89,76]
 // let f=marks.map(function(element,index,array){
 //     return element+10
