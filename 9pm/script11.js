@@ -77,7 +77,6 @@ let q3334 = arrE.findIndex(function(el,index,arr){
 console.log(q3334)
 
 
-
 arrE = [11,22,33,44,11,101]
 
 let g11 = arrE.every(function(el,index,arr){
