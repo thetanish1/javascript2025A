@@ -57,4 +57,19 @@
 
 // Switch case with multipple swich case
 
+// let name='dewase'
+// switch(name){
+//     case "tanish":
+//         case "dewase":
+//             console.log("tanish Dewase")
+//             break
+//     break
+
+//     case "lokesh":
+//         console.log("Second name of tanish")
+//         break
+
+//     default:
+//         console.log("Invalid input")
+// }
 
