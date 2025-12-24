@@ -90,7 +90,7 @@
 // console.log(p)
 
 //             //  0        1         2        3
-// let names=['tanish','disha','rishika','virat']
+// let names=['tanish','vanshika','rishika','virat']
 // console.log(names[0])
 
 // for (let i=0;i<names.length;i++){
@@ -101,7 +101,7 @@
 
 
             //  0        1         2        3
-// let names=['tanish','disha','rishika','virat']
+// let names=['tanish','vanshika','rishika','virat']
 // console.log(typeof(names)) 
 
 // names.push("radha")
@@ -131,7 +131,7 @@
 // console.log(o)
 
 
-let names=['tanish','disha','rishika','vanshika']
+let names=['tanish','vanshika','rishika','vanshika']
 console.log(names.length)
 
 names.push("Poorva")  // end
@@ -152,3 +152,5 @@ console.log(names)
 let q=names.at('tanish')
 console.log(q)
 
+let c=names.indexOf('vanshika')
+console.log(c)
